@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{machine_name}-{machine_id}",
+ "creation": "2024-12-24 15:07:06.987660",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "machine_name",
+  "machine_id",
+  "availability_date",
+  "time_slot",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "machine_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Machine Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "machine_id",
+   "fieldtype": "Data",
+   "label": "Machine Id"
+  },
+  {
+   "fieldname": "availability_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Availability Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_slot",
+   "fieldtype": "Time",
+   "label": "Time Slot"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nBooked"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cardio Machine Availability",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-24 15:39:46.051149",
+ "modified_by": "Administrator",
+ "module": "Gym Managment",
+ "name": "Cardio Machine Availability",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

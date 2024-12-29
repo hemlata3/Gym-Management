@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{locker_id}",
+ "creation": "2024-12-23 21:38:50.027034",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9rjc",
+  "amended_from",
+  "locker_id",
+  "member",
+  "locker_fee",
+  "start_date",
+  "end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9rjc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Loker Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "locker_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Locker Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "locker_fee",
+   "fieldtype": "Currency",
+   "label": "Locker Fee"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-24 14:57:06.952497",
+ "modified_by": "Administrator",
+ "module": "Gym Managment",
+ "name": "Gym Locker Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{trainer_name}",
+ "creation": "2024-12-23 15:46:53.291103",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trainer_name",
+  "trainer_id",
+  "email",
+  "phone_number",
+  "specialization",
+  "experience",
+  "gender"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trainer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trainer_id",
+   "fieldtype": "Data",
+   "label": "Trainer Id"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Specialization",
+   "options": "Cardio\nYoga\nWeight Lifting",
+   "reqd": 1
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-24 15:43:48.671591",
+ "modified_by": "Administrator",
+ "module": "Gym Managment",
+ "name": "Gym Trainer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

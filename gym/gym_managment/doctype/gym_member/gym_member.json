@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member_name}",
+ "creation": "2024-12-23 15:14:06.345875",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "member_id",
+  "email",
+  "phone_number",
+  "gender",
+  "date_of_joining",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Member Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Member Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-24 15:48:43.358263",
+ "modified_by": "Administrator",
+ "module": "Gym Managment",
+ "name": "Gym Member",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member}-{##}",
+ "creation": "2024-12-23 21:42:57.690943",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xk8p",
+  "amended_from",
+  "class_name",
+  "member",
+  "trainer",
+  "date_and_time",
+  "class_fee",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xk8p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Class Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trainer",
+   "options": "Gym Trainer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date and Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_fee",
+   "fieldtype": "Currency",
+   "label": "Class Fee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Confirmed\nCancelled",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-28 13:19:38.384113",
+ "modified_by": "Administrator",
+ "module": "Gym Managment",
+ "name": "Gym Class Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-23 23:25:14.790911",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_name",
+  "email",
+  "contact_number",
+  "address",
+  "terms_and_conditions"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gym Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Small Text",
+   "label": "Terms and Conditions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-12-24 14:58:08.208974",
+ "modified_by": "Administrator",
+ "module": "Gym Managment",
+ "name": "Gym Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
